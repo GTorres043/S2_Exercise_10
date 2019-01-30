@@ -20,8 +20,9 @@
   <title>Cinema Penguin: Royal Wedding (1951)</title>
   <link href="cp_base.css" rel="stylesheet" />
   <link href="cp_styles.css" rel="stylesheet" />
-  <link rel="stylesheet" href="cp_media.css">
-  <link rel="stylesheet" href="cp_animate.css">
+  <link rel="stylesheet" href="cp_media.css" />
+  <link rel="stylesheet" href="cp_animate.css" />
+  <script src="cp_spin.js"></script>
 </head>
 
 <body>
@@ -97,19 +98,15 @@
     <aside>
       <h1>Listen Up</h1>
       <p>The music for <cite>Royal Wedding</cite> was composed by Burton Lane,
-        who is best known for his work in <cite>Finian's Rainbow </cite>
-
-        (1947)
+        who is best known for his work in <cite>Finian's Rainbow </cite>(1947)
         and his Grammy Award-winning <cite>On a Clear Day You Can See
           Forever</cite>(1965).</p>
       <p>Lane's greatest musical accomplishment may
         very well be his discovery of an 11-year-old singing sensation named
         Frances Gumm, whom the world now knows better as Judy Garland.
       </p>
-
-      <p>
-        Click the play button below to hear the musical overture for Burton Lane's <cite>Royal Wedding</cite>.
-      </p>
+      <p>Click the play button below to hear the musical overture for Burton Lane's
+        <cite>Royal Wedding</cite></p>
       <audio controls>
         <source src="cp_overture.mp3" type="audio/mp3" />
         <source src="cp_overture.ogg" type="audio/ogg">
@@ -127,10 +124,13 @@
         would seamlessly dance across the four sides of the box, creating the
         illusion of weightlessness.
       </p>
+      <input type="checkbox" id="rotateVideo">
+      <label for="rotateVideo"></label>
       <video controls poster="cp_photo2.png">
         <source src="cp_dance.mp4" type="video/mp4" />
-        <source src="cp_dance.webm">
+        <source src="cp_dance.webm" type="video/webm" />
         <track src="cp_captions.vtt" kind="captions" label="Dance Captions" default />
+        <p><em>To play this video clip, your browser needs to support HTML5.</em></p>
       </video>
     </aside>
   </section>
